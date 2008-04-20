@@ -1,0 +1,11 @@
+<H1>Contact Us</H1>	
+{% contactform %}
+  <p>{{ form.name }}<label for="author"><small>Your name</small></label></p>
+  <p>{{ form.email }}<label for="email"><small>Email address</small></label></p>
+  <p>{{ form.phone}}<label for="phone"><small>Phone number (optional)</small></label></p>
+  <p>{{ form.subject}}<label for="subject"><small>Subject</small></label></p>
+  <p>{{ form.body }}</p>
+  <p>{{ form.submit }}</p>
+{% endcontactform %}
+
+

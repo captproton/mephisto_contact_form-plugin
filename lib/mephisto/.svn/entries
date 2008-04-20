@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wc-entries
+   xmlns="svn:">
+<entry
+   committed-rev="11"
+   name=""
+   committed-date="2007-03-07T08:11:17.698997Z"
+   url="http://mephisto-contact-form-plugin.googlecode.com/svn/plugins/mephisto_contact_form/lib/mephisto"
+   last-author="vodnik"
+   kind="dir"
+   uuid="c1a95645-f82a-0410-be72-0d824d86f864"
+   repos="http://mephisto-contact-form-plugin.googlecode.com/svn"
+   revision="18"/>
+<entry
+   name="liquid"
+   kind="dir"/>
+</wc-entries>

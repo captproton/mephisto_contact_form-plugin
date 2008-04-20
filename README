@@ -1,0 +1,38 @@
+MephistoContactForm
+===================
+Contact / Feedback form plugin for Mephisto
+Required setup: Rails edge, Mephisto (from trunk rather than release)
+
+Installation
+------------
+1. Install plug-in into:
+	{MEPHISTO_ROOT}\vendor\plugins\mephisto_contact_form
+
+2. Create a new template called 'contact_us.liquid' though the admin web interface (under the 'Design' tab).
+Paste in the following code:
+
+<H1>Contact Us</H1>	
+{% contactform %}
+  <p>{{ form.name }}<label for="author"><small>Your name</small></label></p>
+  <p>{{ form.email }}<label for="email"><small>Email address</small></label></p>
+  <p>{{ form.phone}}<label for="phone"><small>Phone number (optional)</small></label></p>
+  <p>{{ form.subject}}<label for="subject"><small>Subject</small></label></p>
+  <p>{{ form.body }}</p>
+  <p>{{ form.submit }}</p>
+{% endcontactform %}
+
+Feel free to modify labels, layout etc.
+
+3. Edit {MEPHISTO_ROOT}\vendor\plugins\mephisto_contact_form\lib\contact_notifier.rb
+and put in the email address you want contact form submissions to go to.
+
+4. Link to "/contact_form" from your site.
+
+
+Other Details
+-------------
+Author::        James Crisp  (james.crisp@thoughtworks.com)
+Further info::  http://jamescrisp.blogspot.com/2007/03/contact-feedback-form-plugin-for.html
+Copyright::     Copyright (c) 2007 ThoughtWorks
+License::       Apache Version 2.0 (see http://www.apache.org/licenses/)
+
